@@ -1,0 +1,320 @@
+#creating a quiz 
+import time
+import os
+
+def clean():
+    if os.name == 'nt':
+        _ = os.system('cls')
+        
+def question_one():
+    global missed 
+    global score
+    global total
+    missed = 0
+    score = 0
+    total = 10
+    display_A_one = ("Question 1: Who was the Second President?\n ")
+    for i in display_A_one:
+        print(i,end="",flush=True)
+        time.sleep(0.0300)
+    #
+    display_B_one = input("\n1.Thomas Jefferson\n2.Abraham lincoln\n3.John Adams\nAnswer: ")
+    if display_B_one.lower() == "John Adams" or display_B_one == "3":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent:",score,"/",total,"\nMissed:",missed )
+        time.sleep(2)
+        clean()
+        question_two()
+        
+
+    
+    else:
+        time.sleep(0.500)
+        missed = missed +1
+        print("\nINCORRECT!!!","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_two()
+
+def question_two():
+    global missed 
+    global score
+    global total
+
+   
+    display_A_two = ("Question 2: How many continents are there?\n ")
+    for b in display_A_two:
+        print(b,end="",flush=True)
+        time.sleep(0.0300)
+    #
+    display_B_two = input("\n1: 7\n2: 4\n3: 5\nAnswer: ")
+    if display_B_two == "1":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_three()
+    
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_three()
+          
+def question_three():
+    global missed 
+    global score
+    global total
+
+ 
+    display_A_three = ("Question 3: During the creation of America what phrase in the Declaration of Independence was NOT a reflection of America's values\n")
+    for b in display_A_three:
+        print(b,end="",flush=True)
+        time.sleep(0.0300)
+        
+    time.sleep(1)
+    display_B_three = input("\n1.Life, Liberty and the pursuit of Happiness\n2.Liberty shall be given by the goverment\n3.All men are created equal\nAnswer: ")
+    if display_B_three == "2" or display_B_three.lower() == "Americans holding absolute power":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_four()
+       
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_four()
+
+def question_four():
+    global missed 
+    global score
+    global total
+
+   
+    display_A_four = ("Question 4: What is the order of the planets in our solar system?\n")
+    for c in display_A_four:
+        print(c,end="",flush=True)
+        time.sleep(0.0300)
+        
+    #
+    display_B_four = input("\n1.Mercury, Mars, Earth, Venus, Jupiter, Saturn, Uranus, and Neptune \n2.Venus, Mercury, Earth, Mars, Saturn, Jupiter, Uranus, and Neptune\n3.Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune\nAnswer: ")
+    if display_B_four == "3" or display_B_four.lower() == "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_five()
+        
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_five()
+        
+def question_five():
+    global missed 
+    global score
+    global total
+
+    
+    display_A_five = ("Question 5: Who created the Iphone?\n")
+    for c in display_A_five:
+        print(c,end="",flush=True)
+        time.sleep(0.0300)
+        
+    #
+    display_B_five = input("\n1.Steve Wozniak\n2.Steve Jobs\n3.Tim Cooks\nAnswer: ")
+    if display_B_five == "2" or display_B_five.lower() == "Steve Jobs":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_six()
+        
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_six()
+        
+def question_six():
+    global missed 
+    global score
+    global total
+
+    
+    display_A_six = ("Question 6: What are the two political parties that do NOT represent majority of America?\n")
+    for d in display_A_six:
+        print(d,end="",flush=True)
+        time.sleep(0.0300)
+        
+    #
+    display_B_six = input("\n1.Green and Libertarian Party\n2.Democrate and Repulicans Party\n3.Independence and Constitution Party\nAnswer: ")
+    if display_B_six == "1" or display_B_six.lower() == "Green and Libertarian":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_seven()
+        
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_seven()
+    
+
+def question_seven():
+    global missed 
+    global score
+    global total
+
+
+    display_A_seven = ("Question 7: Who is the richest person in America? \n")
+    for e in display_A_seven:
+        print(e,end="",flush=True)
+        time.sleep(0.0300)
+        
+    #
+    display_B_seven = input("\n1.Jeff Bezos\n2.Elon Musk\n3.Mark Zuckerberg\nAnswer: ")
+    if display_B_seven == "2" or display_B_seven.lower() == "Elon Musk":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_eight()
+      
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_eight()
+       
+def question_eight():
+    global missed 
+    global score
+    global total
+
+    
+    display_A_eight = ("Question 8: Who is on the 50$ bill? \n")
+    for f in display_A_eight:
+        print(f,end="",flush=True)
+        time.sleep(0.0300)
+        
+    #
+    display_B_seven = input("\n1.Thompas Jefferson\n2.Grover Cleveland\n3.Ulysses S. Grant\nAnswer: ")
+    if display_B_seven == "3" or display_B_seven.lower() == "Ulysses S. Grant":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_nine()
+        
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_nine()
+    
+       
+def question_nine():
+    global missed 
+    global score
+    global total
+
+ 
+    display_A_nine = ("Question 9: What does CIA stand for?\n")
+    for g in display_A_nine:
+        print(g,end="",flush=True)
+        time.sleep(0.0300)
+        
+    #
+    display_B_nine = input("\n1.Central Intelligence Agents\n2.Counter Intelligence Agency\n3.Central Intelligence Agency\nAnswer: ")
+    if display_B_nine == "3" or display_B_nine.lower() == "Central Intelligence Agency":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        question_ten()
+        
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        question_ten()
+       
+def question_ten():
+    global missed 
+    global score
+    global total
+
+   
+    display_A_ten = ("Question 10: Who was the key person responsible for the development of the atomic bomb, and who played the main supporting role in helping them?\n")
+    for h in display_A_ten:
+        print(h,end="",flush=True)
+        time.sleep(0.0300)
+        
+    #
+    display_B_ten = input("\n1.physicist J. Robert Oppenheimer and mathematician Marcel Grossman\n2.physicist J. Robert Oppenheimer and Particle Physics. Donald A. Glaser\n3.physicist J. Robert Oppenheimer and Theoretical physicis Albert Einstein\nAnswer: ")
+    if display_B_ten == "1" or display_B_ten.lower() == "physicist J. Robert Oppenheimer and mathematician Marcel Grossman":
+        time.sleep(0.500)
+        score +=1
+        print("\nCorrect!","\nCurrent score:",score,"/",total,"\nMissed is:",missed)
+        time.sleep(2)
+        clean()
+        final()
+        
+    
+    else:
+        missed = missed +1
+        print("\nIncorrect, try again","\nMissed:",missed)
+        time.sleep(2)
+        clean()
+        final()
+    
+       
+def final():
+    global missed 
+    global score
+    global total
+    
+    percentage = score / total * int(100)
+    
+    print("Score:","%",percentage,"\nMissed: ",missed)
+
+question_one()
+
